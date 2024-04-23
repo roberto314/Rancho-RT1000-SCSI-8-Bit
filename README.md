@@ -1,1 +1,1 @@
-# Ranch-RT1000-SCSI-8-Bit
+# Rancho-RT1000-SCSI-8-Bit
