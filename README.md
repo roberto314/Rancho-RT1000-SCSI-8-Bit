@@ -27,4 +27,4 @@ Tested with MSDOS 5.
 * C: 1021 / H:9  / S:57 261800 kB (FAT16/6) spc=8,spf=0x100: works
 * C: 1023 / H:9  / S:57 262627 kB (FAT16/6) spc=16,spf=0x100: non-system disk
 * C: 1010 / H:17  / S:60 515072 kB (FAT16/6) spc=16,spf=0xFC: works
-* C: 1011 / H:31  / S:62 948 MB (FAT16/6) spc=32,spf=0xEE: 
+* C: 1011 / H:31  / S:62 948 MB (FAT16/6) spc=32,spf=0xEE: works
