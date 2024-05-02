@@ -17,7 +17,7 @@ Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images wo
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
 
-Tested with MSDOS 5 and with a 386SX and does NOT work with an 8088 nor 80C88!):
+Tested with MSDOS 5 and with a 386SX and does NOT work with an 8088 nor 80C88!:
 
 (spc = Sectors/Cluster, spf = Sectors/FAT)
 
@@ -32,8 +32,9 @@ Tested with MSDOS 5 and with a 386SX and does NOT work with an 8088 nor 80C88!):
 * C: 1010 / H:17  / S:60 515072 kB (FAT16/6) spc=16,spf=0xFC: works
 * C: 1011 / H:31  / S:62 948 MB (FAT16/6) spc=32,spf=0xEE: works
 
-Heads and Sectors working with Corel LS2000 BIOS (v1.65) (
-	tested with 386SX and does NOT work with an 8088!):
+Heads and Sectors working with Corel LS2000 BIOS (v1.65):
+
+Tested with 386SX and does NOT work with an 8088!:
 
 * C:  961 / H:17 / S:8 63.1 MB (FAT16/6) spc=4,spf=0x80: works
 * C:  961 / H:17 / S:16 127.6 MB (FAT16/6) spc=4,spf=0xFF: works
