@@ -19,9 +19,10 @@ For now there is no plan to manufacture the board.
 
 
 Comment 1: Bootcode found, tries to access the disk and hangs, without Boot BIOS Computer starts and ASPI works.
+
 Comment 2: Bootcode found, tries to access the disk and hangs, without Boot BIOS Computer starts and ASPI partially works (RTASPI10.SYS works but AspiDiskDriver 4.01 from Adaptec hangs).
 
-Card works in my XT but the ASPI driver doesn't.
+
 The Card semms to be the same as the Corel LS2000, so i tried the Corel BIOS and it works!
 Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images won't work.
 The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS.
