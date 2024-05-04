@@ -26,7 +26,7 @@ Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images wo
 
 The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS and vice versa, BUT they need the correct CHS Values!
 
-The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU, with a 8088 here is a Division Overflow (even with Math Copro 8087).
+The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU, with a 8088 there is a Division Overflow (even with Math Copro 8087).
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
 
