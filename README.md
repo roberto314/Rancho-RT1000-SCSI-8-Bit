@@ -10,10 +10,13 @@ BIOS EPROM is a 27C128 Type, but only 8k are used.
 
 For now there is no plan to manufacture the board.
 
+
 | BIOS Ver.   | 8088/80C88 |   286   |  386SX  |  386DX     |   486   |
+|-------------|------------|---------|---------|------------|---------|
 | Rancho 8.10 |            |         |         | boots+ASPI |         |
 | Rancho 8.20 |            |         |         | Comment 1  |         |
 | Corel 1.65  |            |         |         |            |         |
+
 
 Comment 1: Bootcode found, tries to access the disk and hangs, without Boot BIOS
     Computer startts and ASPI works.
