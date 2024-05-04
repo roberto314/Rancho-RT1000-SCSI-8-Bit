@@ -11,19 +11,20 @@ BIOS EPROM is a 27C128 Type, but only 8k are used.
 For now there is no plan to manufacture the board.
 
 
-| BIOS Ver.   | 8088/80C88 |   286   |  386SX  |  386DX     |   486   |
-|-------------|------------|---------|---------|------------|---------|
-| Rancho 8.10 |            |         |         | boots+ASPI |         |
-| Rancho 8.20 |            |         |         | Comment 1  |         |
-| Corel 1.65  |            |         |         |            |         |
+| BIOS Ver.   | 8088/80C88 |   286   |  386SX    |  386DX     |   486   |
+|-------------|------------|---------|-----------|------------|---------|
+| Rancho 8.10 |            |         | Comment 2 | boots+ASPI |         |
+| Rancho 8.20 |            |         | Comment 2 | Comment 1  |         |
+| Corel 1.65  |            |         | Comment 2 | Comment 1  |         |
 
 
-Comment 1: Bootcode found, tries to access the disk and hangs, without Boot BIOS
-    Computer startts and ASPI works.
+Comment 1: Bootcode found, tries to access the disk and hangs, without Boot BIOS Computer starts and ASPI works.
+Comment 2: Bootcode found, tries to access the disk and hangs, without Boot BIOS Computer starts and ASPI partially works (RTASPI10.SYS works but AspiDiskDriver 4.01 from Adaptec hangs).
 
 Card works in my XT but the ASPI driver doesn't.
 The Card semms to be the same as the Corel LS2000, so i tried the Corel BIOS and it works!
 Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images won't work.
+The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS.
 
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
