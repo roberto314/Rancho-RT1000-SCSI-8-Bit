@@ -11,22 +11,22 @@ BIOS EPROM is a 27C128 Type, but only 8k are used.
 For now there is no plan to manufacture the board.
 
 
-| BIOS Ver.   | 8088/80C88 |   286   |  386SX    |  386DX     |   486   |
-|-------------|------------|---------|-----------|------------|---------|
-| Rancho 8.10 |            |         | Comment 2 | boots+ASPI |         |
-| Rancho 8.20 |            |         | Comment 2 | Comment 1  |         |
-| Corel 1.65  |            |         | Comment 2 | Comment 1  |         |
+| BIOS Ver.   |   8088/80C88        |    NEC V20       |   286      |  386SX     |
+|-------------|---------------------|------------------|------------|------------|
+| Rancho 8.10 | no boot, no ASPI    | no boot, no ASPI | boots+ASPI | boots+ASPI |
+| Rancho 8.20 | no boot, no ASPI    | no boot, no ASPI | boots+ASPI | boots+ASPI |
+| Corel 1.65  | no boot, no ASPI    | boots+Corel ASPI | boots+ASPI | boots+ASPI |
 
 
-Comment 1: Bootcode found, tries to access the disk and hangs, without Boot BIOS Computer starts and ASPI works.
-
-Comment 2: Bootcode found, tries to access the disk and hangs, without Boot BIOS Computer starts and ASPI partially works (RTASPI10.SYS works but AspiDiskDriver 4.01 from Adaptec hangs).
-
+Comment: On an XT, even with V20 CPU, with Rancho BIOS, a Disk is found but hangs when trying to boot. RTASPI10.SYS says it needs a 286.
 
 The Card semms to be the same as the Corel LS2000, so i tried the Corel BIOS and it works!
-Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images won't work.
-The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS.
 
+Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images won't work.
+
+The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS and vice versa, BUT they need the correct CHS Values!
+
+The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU, with a 8088 here is a Division Overflow (even with Math Copro 8087).
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
 
@@ -65,3 +65,5 @@ Tested with 386SX and does NOT work with an 8088!:
 * C: 1019 / H:64 / S:32 1020 MB (FAT16/6) spc=32,spf=0xFF: works
 * C:  946 / H:64 / S:32 947 MB (FAT16/6) spc=32,spf=0xED: doesn't work
 * C:  946 / H:64 / S:32 947 MB (FAT16/6) spc=32,spf=0xFB: doesn't work
+
+It should be said that the Corel Drivers and BIOS is the way to go!
