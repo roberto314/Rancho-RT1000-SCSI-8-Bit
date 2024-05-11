@@ -29,6 +29,7 @@ The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS and vic
 The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU, with a 8088 there is a Division Overflow (even with Math Copro 8087).
 
 The Rancho BIOS doesn't need an Interrupt, the Corel BIOS seems to work only with IRQ4!
+The Jumper X14, X15, X16, X17 and X18 won't do anything with the Corel BIOS.
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
 
