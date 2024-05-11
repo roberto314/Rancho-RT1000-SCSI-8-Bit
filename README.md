@@ -29,6 +29,10 @@ The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS and vic
 The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU and with an 8088.
 The ASPIDISK.SYS Driver doesn't like the 8088 BUT the Trantor TSCSI Disk Driver in Version 4.53 works (Filename: TSCSI.453)
 
+![](pics/Start1.jpg)
+
+![](pics/Start2.jpg)
+
 The Rancho BIOS doesn't need an Interrupt, the Corel BIOS seems to work only with IRQ4!
 The Jumper X14, X15, X16, X17 and X18 won't do anything with the Corel BIOS.
 
