@@ -15,7 +15,7 @@ For now there is no plan to manufacture the board.
 |-------------|---------------------|------------------|------------|------------|
 | Rancho 8.10 | no boot, no ASPI    | no boot, no ASPI | boots+ASPI | boots+ASPI |
 | Rancho 8.20 | no boot, no ASPI    | no boot, no ASPI | boots+ASPI | boots+ASPI |
-| Corel 1.65  | no boot, no ASPI    | boots+Corel ASPI | boots+ASPI | boots+ASPI |
+| Corel 1.65  | no boot, Corel ASPI | boots+Corel ASPI | boots+ASPI | boots+ASPI |
 
 
 Comment: On an XT, even with V20 CPU, with Rancho BIOS, a Disk is found but hangs when trying to boot. RTASPI10.SYS says it needs a 286.
@@ -26,7 +26,8 @@ Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images wo
 
 The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS and vice versa, BUT they need the correct CHS Values!
 
-The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU, with a 8088 there is a Division Overflow (even with Math Copro 8087).
+The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU and with an 8088.
+The ASPIDISK.SYS Driver doesn't like the 8088 BUT the Trantor TSCSI Disk Driver in Version 4.53 works (Filename: TSCSI.453)
 
 The Rancho BIOS doesn't need an Interrupt, the Corel BIOS seems to work only with IRQ4!
 The Jumper X14, X15, X16, X17 and X18 won't do anything with the Corel BIOS.
