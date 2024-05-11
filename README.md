@@ -36,6 +36,8 @@ The ASPIDISK.SYS Driver doesn't like the 8088 BUT the Trantor TSCSI Disk Driver 
 The Rancho BIOS doesn't need an Interrupt, the Corel BIOS seems to work only with IRQ4!
 The Jumper X14, X15, X16, X17 and X18 won't do anything with the Corel BIOS.
 
+With the BIOS EPROM installed the 8088 hangs during boot from Floppy! One has to disable the BIOS in order to boot on an 8088.
+
 The Corel BIOS can only address two Harddisks without an ASPI Driver installed!
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
