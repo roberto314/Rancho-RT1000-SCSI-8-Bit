@@ -20,13 +20,15 @@ For now there is no plan to manufacture the board.
 
 Comment: On an XT, even with V20 CPU, with Rancho BIOS, a Disk is found but hangs when trying to boot. RTASPI10.SYS says it needs a 286.
 
-The Card semms to be the same as the Corel LS2000, so i tried the Corel BIOS and it works!
+The Card seems to be the same as the Corel LS2000, so i tried the Corel BIOS and it works!
 
 Unfortunately the Corel uses a different CHS Conversion, so the Rancho Images won't work.
 
 The ASPI Driver from the Rancho (RTASPI10.SYS) works with the Corel BIOS and vice versa, BUT they need the correct CHS Values!
 
 The ASPI Driver from the Corel (ASPILS_D.SYS) works with a V20 CPU, with a 8088 there is a Division Overflow (even with Math Copro 8087).
+
+The Rancho BIOS doesn't need an Interrupt, the Corel BIOS seems to work only with IRQ4!
 
 Heads and Sectors working with original RT1000 BIOS (v8.20):
 
